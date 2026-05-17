@@ -28,6 +28,10 @@ body {
   line-height: 1.65;
 }
 
+html[dir="rtl"] body {
+  text-align: right;
+}
+
 a {
   color: var(--brand-strong);
   text-decoration-thickness: 0.08em;
@@ -199,6 +203,12 @@ p {
   padding-left: 20px;
 }
 
+html[dir="rtl"] .summary ul,
+html[dir="rtl"] .policy ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
 .summary li,
 .policy li {
   margin: 8px 0;
@@ -229,6 +239,11 @@ p {
   border-left: 4px solid var(--brand);
   border-radius: 8px;
   background: #eef6f3;
+}
+
+html[dir="rtl"] .callout {
+  border-right: 4px solid var(--brand);
+  border-left: 0;
 }
 
 .meta {
